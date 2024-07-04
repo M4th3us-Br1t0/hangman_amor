@@ -80,9 +80,9 @@ def jogar():
 
     for i, col in enumerate(columns):
         with col:
-            if i == 5:  # Espaço na frase
+            if i == 4:  # Espaço na frase
                 st.subheader(' ')
-            elif i == 12:  # Ponto de interrogação na frase
+            elif i == 15:  # Ponto de interrogação na frase
                 st.subheader('?')
             else:
                 st.subheader(st.session_state.frase_completa[i])
