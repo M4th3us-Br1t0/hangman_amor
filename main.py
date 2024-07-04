@@ -82,7 +82,7 @@ def jogar():
 
     for i, col in enumerate(columns):
         with col:
-            if i == 6:
+            if i == 5:
                 st.subheader(' ')
             elif i == 13:
                 st.subheader('?')
