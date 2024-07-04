@@ -1,13 +1,13 @@
 import streamlit as st
 
-frase = 'NAMORA COMIGO?'
+frase = 'VOLTA COMIGO?'
 
 
 def img():
     st.image(fases.get((st.session_state.tentativas)))
 
 
-st.title('Jogo da Forca do Amor')
+st.title('Julia, esse é o meu jogo da forca para você! :)')
 st.markdown("""
     <style>
         [data-testid="stAppViewContainer"] > .main {
