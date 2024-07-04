@@ -84,7 +84,7 @@ def jogar():
         with col:
             if i == 5:
                 st.subheader(' ')
-            elif i == 13:
+            elif i == 12:
                 st.subheader('?')
             else:
                 st.subheader(st.session_state.frase_completa[i])
