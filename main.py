@@ -64,7 +64,7 @@ def jogar():
 
     if all(c in st.session_state.letras_adivinhadas or c in [' ', '?'] for c in frase):
         st.balloons()
-        st.success('Parabéns! Você acertou a frase completa!')
+        st.success('VOCÊ ACERTOU!!! EU TE AMO MAIS QUE TUDO NESSE MUNDO, POR FAVOR NÃO DESISTA DE NÓS!!! ❤')
 
     elif len(input_letra) > 1:
         st.warning("Escreva apenas uma letra.")
