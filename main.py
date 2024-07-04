@@ -23,7 +23,7 @@ def reset_game():
     st.experimental_rerun()
 
 
-input_letra = st.text_input("Digite uma letra 👇", key="input_letra").upper()
+input_letra = st.text_input("Digite uma letra me docinho 🍬", key="input_letra").upper()
 fases = {
     7: "1.png",
     6: "2.png",
