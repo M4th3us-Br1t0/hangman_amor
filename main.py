@@ -1,6 +1,6 @@
 import streamlit as st
 
-frase = 'VOLTA COMIGO?'
+frase = 'VOLTA COMIGO?'  # Substitua a frase aqui
 
 
 def img():
@@ -52,8 +52,7 @@ def jogar():
             st.session_state.letras_adivinhadas.append(input_letra)
         else:
             st.success(f"Parabéns, {input_letra} está na frase!")
-            index = [i for i, letra in enumerate(
-                frase) if letra == input_letra]
+            index = [i for i, letra in enumerate(frase) if letra == input_letra]
             frase_completa_lista = list(st.session_state.frase_completa)
             for i in index:
                 frase_completa_lista[i] = input_letra
@@ -72,7 +71,6 @@ def jogar():
         st.warning('Digito inválido.')
 
     if st.session_state.tentativas <= 0:
-
         st.error('Você perdeu!')
         button_key = f"tentar_novamente_btn{st.session_state.tentativas}"
         if st.button("Tentar novamente", key=button_key):
@@ -84,7 +82,7 @@ def jogar():
         with col:
             if i == 6:
                 st.subheader(' ')
-            elif i == 13:
+            elif i == 10:
                 st.subheader('?')
             else:
                 st.subheader(st.session_state.frase_completa[i])
